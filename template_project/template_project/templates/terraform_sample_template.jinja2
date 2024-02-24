@@ -1,0 +1,6 @@
+resource "bigip_ltm_virtual_server" "{{ resource_name }}" {
+  name        = "{{ vs_name }}"
+  destination = "{{ vs_ip }}"
+  port        = 80
+  pool        = "/Common/the-default-pool"
+}

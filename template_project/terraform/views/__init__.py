@@ -1,0 +1,1 @@
+from .template_generate_view import TemplateGenerateView
